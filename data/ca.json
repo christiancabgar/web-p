@@ -1,7 +1,7 @@
 {
   "artist": {
-    "name": "Nom Artístic",
-    "subtitle": "Violí · Veu · Agrupacions de Cambra"
+    "name": "Paula Balbín",
+    "subtitle": "Violí · Cant · Agrupacions"
   },
   "nav": {
     "presentation": "Presentació",
@@ -10,20 +10,24 @@
   },
   "presentation": {
     "eyebrow": "Trajectòria i Perfil Artístic",
-    "title": "Sensibilitat clàssica i versatilitat vocal per a moments irrepetibles",
+    "title": "Sensibilitat clàssica i versatilitat musical per a moments irrepetibles",
     "photoUrl": "",
-    "photoAlt": "Retrat de l'artista amb violí",
+    "photoAlt": "Retrat de Paula Balbín amb violí",
     "photoPlaceholder": "Espai per a fotografia de retrat",
     "specialties": [
-      "Violí solista (clàssic, bandes sonores i modern)",
-      "Cant líric i modern",
-      "Coordinació de duos, trios i quartets",
-      "Repertori personalitzat a petició"
+      "Violí i cant clàssic (ESMUC)",
+      "Música simfònica i de cambra",
+      "Fusions modernes (Big Band, electrònica i audiovisual)",
+      "Més de 5 anys d'experiència en cerimònies i esdeveniments"
     ],
     "paragraphs": [
-      "Aquí anirà el text complet de presentació i trajectòria que t'ha facilitat l'artista. El disseny editorial està pensat per donar aire i llegibilitat a textos extensos sense perdre elegància.",
-      "Pots dividir la biografia en tants paràgrafs com necessitis dins d'aquesta llista: formació acadèmica, experiència en escenaris i auditoris, col·laboracions destacades i enfocament artístic en esdeveniments privats.",
-      "A més de la seva faceta com a violinista i cantant solista, compta amb una xarxa de músics professionals per configurar agrupacions a mida (duo amb piano o guitarra, trio de corda o quartet clàssic) adaptant-se a l'acústica i el caràcter de cada celebració."
+      "Soc Paula Balbín, violinista i cantant, actualment a l'últim curs dels meus estudis superiors de música a l'Escola Superior de Música de Catalunya (ESMUC), on curso l'especialitat de violí i cant clàssic com a segon instrument.",
+      "La meva trajectòria musical s'ha desenvolupat principalment dins l'àmbit de la música clàssica, una formació que m'ha permès créixer com a intèrpret i adquirir una sòlida base tècnica i artística. Al llarg d'aquests anys he tingut l'oportunitat de formar part de diferents orquestres simfòniques, entre elles l'Orquestra Simfònica del Vallès (OSV), la Jove Orquestra Nacional de Catalunya (JONC), la Jove Orquestra Simfònica de Barcelona (JOSB) i l'Orquestra Simfònica de l'ESMUC. Aquestes experiències m'han permès treballar sota la direcció de diferents mestres i participar en projectes de gran riquesa musical i artística.",
+      "També he desenvolupat una important trajectòria en l'àmbit de la música de cambra, així com l'oportunitat d'ampliar la meva formació mitjançant classes magistrals i trobades musicals amb intèrprets i professors de reconegut prestigi, com Vlad Stanculeasa, Helena Satué, Kennedy Moretti, Rosalia Lasheras, Abel Tomàs i Arnau Tomàs, entre d'altres.",
+      "Tot i que la meva formació és fonamentalment clàssica, sempre m'ha interessat explorar altres llenguatges i possibilitats musicals. He participat en projectes que combinen la música clàssica amb estils moderns, com formacions de big band amb secció de corda, propostes que fusionen la música clàssica amb l'electrònica i el techno juntament amb DJ, i altres formats que busquen trencar les fronteres entre gèneres. També he tingut l'oportunitat de portar la meva música a la televisió, participant en projectes audiovisuals i musicals.",
+      "Paral·lelament a la meva formació acadèmica, fa més de cinc anys que treballo com a música en cerimònies i esdeveniments especials. Aquesta experiència ocupa un lloc molt important en la meva trajectòria, ja que m'ha permès comprendre el valor de la música com a vehicle d'emocions i com a part de moments irrepetibles.",
+      "M'apassiona poder acompanyar les persones en instants significatius de les seves vides, posant la meva sensibilitat i la meva experiència musical al servei de cada ocasió. Crec que la música té la capacitat de donar veu a allò que de vegades les paraules no aconsegueixen expressar, i és precisament això el que intento transmetre en cada interpretació.",
+      "El meu objectiu és continuar creixent com a música, explorant noves formes d'expressió i oferint propostes musicals cuidades, personals i adaptades a cada ocasió."
     ]
   },
   "services": {
@@ -31,7 +35,7 @@
     "title": "Serveis per tipus d'esdeveniment",
     "intro": "Selecciona el tipus de celebració per consultar les diferents gammes de format disponibles, des d'actuació solista fins a agrupació completa.",
     "ctaLabel": "Consultar disponibilitat",
-    "inquiryPrefix": "Hola, m'agradaria demanar informació per a:",
+    "inquiryPrefix": "Hola Paula, m'agradaria demanar informació per a:",
     "footnote": "* Les tarifes són orientatives i s'ajusten segons la ubicació, durada i peticions especials de repertori.",
     "events": [
       {
@@ -196,11 +200,11 @@
   "contact": {
     "title": "Contacte i contractació",
     "subtitle": "Escriu-me directament per consultar disponibilitat de dates, repertori o demanar un pressupost sense compromís.",
-    "whatsappNumber": "34600000000",
+    "whatsappNumber": "34640856910",
     "whatsappLabel": "WhatsApp",
-    "instagramUrl": "https://instagram.com/",
+    "instagramUrl": "https://instagram.com/paulabalbin_16",
     "instagramLabel": "Instagram",
-    "email": "contacte@dominiartista.com",
+    "email": "pbalbin16@gmail.com",
     "rights": "Tots els drets reservats."
   }
 }

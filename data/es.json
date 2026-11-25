@@ -1,7 +1,7 @@
 {
   "artist": {
-    "name": "Nombre Artístico",
-    "subtitle": "Violín · Voz · Agrupaciones de Cámara"
+    "name": "Paula Balbín",
+    "subtitle": "Violín · Canto · Agrupaciones"
   },
   "nav": {
     "presentation": "Presentación",
@@ -10,20 +10,24 @@
   },
   "presentation": {
     "eyebrow": "Trayectoria y Perfil Artístico",
-    "title": "Sensibilidad clásica y versatilidad vocal para momentos irrepetibles",
+    "title": "Sensibilidad clásica y versatilidad musical para momentos irrepetibles",
     "photoUrl": "",
-    "photoAlt": "Retrato del artista con violín",
+    "photoAlt": "Retrato de Paula Balbín con violín",
     "photoPlaceholder": "Espacio para fotografía de retrato",
     "specialties": [
-      "Violín solista (clásico, bandas sonoras y moderno)",
-      "Canto lírico y moderno",
-      "Coordinación de dúos, tríos y cuartetos",
-      "Repertorio personalizado bajo petición"
+      "Violín y canto clásico (ESMUC)",
+      "Música sinfónica y de cámara",
+      "Fusiones modernas (Big Band, electrónica y audiovisual)",
+      "Más de 5 años de experiencia en ceremonias y eventos"
     ],
     "paragraphs": [
-      "Aquí irá el texto completo de presentación y trayectoria que te ha facilitado el artista. El diseño editorial está pensado para dar aire y legibilidad a textos extensos sin perder elegancia.",
-      "Puedes dividir la biografía en tantos párrafos como necesites dentro de esta lista: formación académica, experiencia en escenarios y auditorios, colaboraciones destacadas y enfoque artístico en eventos privados.",
-      "Además de su faceta como violinista y cantante solista, cuenta con una red de músicos profesionales para configurar agrupaciones a medida (dúo con piano o guitarra, trío de cuerda o cuarteto clásico) adaptándose a la acústica y el carácter de cada celebración."
+      "Soy Paula Balbín, violinista y cantante, actualmente en el último curso de mis estudios superiores de música en la Escola Superior de Música de Catalunya (ESMUC), donde curso la especialidad de violín y canto clásico, como segundo instrumento.",
+      "Mi trayectoria musical se ha desarrollado principalmente dentro del ámbito de la música clásica, una formación que me ha permitido crecer como intérprete y adquirir una sólida base técnica y artística. A lo largo de estos años he tenido la oportunidad de formar parte de diferentes orquestas sinfónicas, entre ellas la Orquestra Simfònica del Vallès (OSV), la Jove Orquestra Nacional de Catalunya (JONC), la Jove Orquestra Simfònica de Barcelona (JOSB) y la Orquesta Sinfónica de la ESMUC. Estas experiencias me han permitido trabajar bajo la dirección de diferentes maestros y participar en proyectos de gran riqueza musical y artística.",
+      "También he desarrollado una importante trayectoria en el ámbito de la música de cámara, así como la oportunidad de ampliar mi formación mediante clases magistrales y encuentros musicales con intérpretes y profesores de reconocido prestigio, como Vlad Stanculeasa, Helena Satué, Kennedy Moretti, Rosalia Lasheras, Abel Tomàs y Arnau Tomàs, entre otros.",
+      "Aunque mi formación es fundamentalmente clásica, siempre me ha interesado explorar otros lenguajes y posibilidades musicales. He participado en proyectos que combinan la música clásica con estilos modernos, como formaciones de big band con sección de cuerda, propuestas que fusionan la música clásica con la electrónica y el techno junto a DJ, y otros formatos que buscan romper las fronteras entre géneros. También he tenido la oportunidad de llevar mi música a la televisión, participando en proyectos audiovisuales y musicales.",
+      "Paralelamente a mi formación académica, llevo más de cinco años trabajando como músico en ceremonias y acontecimientos especiales. Esta experiencia ocupa un lugar muy importante en mi trayectoria, ya que me ha permitido comprender el valor de la música como vehículo de emociones y como parte de momentos irrepetibles.",
+      "Me apasiona poder acompañar a las personas en instantes significativos de sus vidas, poniendo mi sensibilidad y mi experiencia musical al servicio de cada ocasión. Creo que la música tiene la capacidad de dar voz a aquello que a veces las palabras no consiguen expresar, y es precisamente eso lo que intento transmitir en cada interpretación.",
+      "Mi objetivo es seguir creciendo como músico, explorando nuevas formas de expresión y ofreciendo propuestas musicales cuidadas, personales y adaptadas a cada ocasión."
     ]
   },
   "services": {
@@ -31,7 +35,7 @@
     "title": "Servicios por tipo de evento",
     "intro": "Selecciona el tipo de celebración para consultar las distintas gamas de formato disponibles, desde actuación solista hasta agrupación completa.",
     "ctaLabel": "Consultar disponibilidad",
-    "inquiryPrefix": "Hola, me gustaría pedir información para:",
+    "inquiryPrefix": "Hola Paula, me gustaría pedir información para:",
     "footnote": "* Las tarifas son orientativas y se ajustan según la ubicación, duración y peticiones especiales de repertorio.",
     "events": [
       {
@@ -141,7 +145,7 @@
               "Actuación de 60 a 90 minutos",
               "Repertorio adaptable al ritmo del evento",
               "Equipo de sonido compacto incluido",
-              "Montaje rápido y discreto"
+              "Montaje rápido y discret"
             ]
           },
           {
@@ -196,11 +200,11 @@
   "contact": {
     "title": "Contacto y contratación",
     "subtitle": "Escríbeme directamente para consultar disponibilidad de fechas, repertorio o pedir un presupuesto sin compromiso.",
-    "whatsappNumber": "34600000000",
+    "whatsappNumber": "34640856910",
     "whatsappLabel": "WhatsApp",
-    "instagramUrl": "https://instagram.com/",
+    "instagramUrl": "https://instagram.com/paulabalbin_16",
     "instagramLabel": "Instagram",
-    "email": "contacto@dominioartista.com",
+    "email": "pbalbin16@gmail.com",
     "rights": "Todos los derechos reservados."
   }
 }

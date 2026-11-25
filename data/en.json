@@ -1,7 +1,7 @@
 {
   "artist": {
-    "name": "Artist Name",
-    "subtitle": "Violin · Vocals · Chamber Ensembles"
+    "name": "Paula Balbín",
+    "subtitle": "Violin · Vocals · Ensembles"
   },
   "nav": {
     "presentation": "Biography",
@@ -10,20 +10,24 @@
   },
   "presentation": {
     "eyebrow": "Background & Artistic Profile",
-    "title": "Classical sensitivity and vocal versatility for unforgettable moments",
+    "title": "Classical sensitivity and musical versatility for unforgettable moments",
     "photoUrl": "",
-    "photoAlt": "Artist portrait with violin",
+    "photoAlt": "Portrait of Paula Balbín with violin",
     "photoPlaceholder": "Portrait photograph placeholder",
     "specialties": [
-      "Solo violin (classical, film scores & contemporary)",
-      "Classical & contemporary vocals",
-      "Coordination of duos, trios & string quartets",
-      "Bespoke repertoire upon request"
+      "Violin & classical voice (ESMUC)",
+      "Symphonic & chamber music performance",
+      "Modern crossovers (Big Band, electronic & television)",
+      "Over 5 years performing at ceremonies and special events"
     ],
     "paragraphs": [
-      "This section will hold the full biography and career background provided by the artist. The editorial layout is designed to give generous breathing room and readability to long-form texts while maintaining a refined aesthetic.",
-      "You can split the biography into as many paragraphs as needed inside this array: academic training, stage and concert hall experience, notable collaborations, and artistic approach to private events.",
-      "Alongside solo violin and vocal performances, the artist works with a curated network of professional musicians to assemble bespoke ensembles (piano or guitar duo, string trio, or classical quartet) tailored to the acoustics and atmosphere of each celebration."
+      "I am Paula Balbín, a violinist and singer currently in the final year of my Bachelor of Music at the Escola Superior de Música de Catalunya (ESMUC), majoring in violin with classical voice as my second instrument.",
+      "My musical path has developed primarily within the realm of classical music, a training that has allowed me to grow as a performer and build a solid technical and artistic foundation. Over the years, I have had the opportunity to perform with several symphony orchestras, including the Orquestra Simfònica del Vallès (OSV), the Jove Orquestra Nacional de Catalunya (JONC), the Jove Orquestra Simfònica de Barcelona (JOSB), and the ESMUC Symphony Orchestra. These experiences have enabled me to work under the baton of renowned conductors and take part in projects of great musical and artistic richness.",
+      "I have also built extensive experience in chamber music and broadened my training through masterclasses and musical encounters with prestigious performers and professors such as Vlad Stanculeasa, Helena Satué, Kennedy Moretti, Rosalia Lasheras, Abel Tomàs, and Arnau Tomàs, among others.",
+      "Although my background is fundamentally classical, I have always been drawn to exploring other musical languages and possibilities. I have taken part in projects that blend classical music with modern styles—such as big band ensembles with string sections, fusion projects combining classical music with electronic and techno music alongside DJs, and other formats that seek to break down boundaries between genres. I have also had the opportunity to bring my music to television, participating in audiovisual and musical productions.",
+      "Alongside my academic training, I have been working for over five years as a musician for ceremonies and special events. This experience holds a very important place in my career, as it has allowed me to understand the value of music as a vehicle for emotion and as an essential part of once-in-a-lifetime moments.",
+      "I am passionate about accompanying people during meaningful moments in their lives, placing my sensitivity and musical experience at the service of each occasion. I believe music has the power to give voice to what words sometimes cannot express, and that is precisely what I strive to convey in every performance.",
+      "My goal is to continue growing as a musician, exploring new forms of expression and offering thoughtful, personal musical proposals tailored to every occasion."
     ]
   },
   "services": {
@@ -31,7 +35,7 @@
     "title": "Services by event type",
     "intro": "Select the type of event below to explore the available performance tiers, from solo sets to full chamber ensembles.",
     "ctaLabel": "Check availability",
-    "inquiryPrefix": "Hello, I would like to inquire about:",
+    "inquiryPrefix": "Hello Paula, I would like to inquire about:",
     "footnote": "* Rates are indicative and tailored according to location, duration, and special repertoire requests.",
     "events": [
       {
@@ -196,11 +200,11 @@
   "contact": {
     "title": "Contact & Booking",
     "subtitle": "Reach out directly to check date availability, discuss repertoire, or request a tailored quote.",
-    "whatsappNumber": "34600000000",
+    "whatsappNumber": "34640856910",
     "whatsappLabel": "WhatsApp",
-    "instagramUrl": "https://instagram.com/",
+    "instagramUrl": "https://instagram.com/paulabalbin_16",
     "instagramLabel": "Instagram",
-    "email": "contact@artistdomain.com",
+    "email": "pbalbin16@gmail.com",
     "rights": "All rights reserved."
   }
 }
