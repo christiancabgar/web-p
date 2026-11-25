@@ -61,10 +61,8 @@
     const d = state.data;
     if (!d) return;
 
-    // Título de página y cabecera
+    // Título de la pestaña del navegador
     document.title = `${d.artist.name} | ${d.artist.subtitle}`;
-    document.getElementById("brand-name").textContent = d.artist.name;
-    document.getElementById("brand-subtitle").textContent = d.artist.subtitle;
 
     // Pestañas y selector de idioma
     document.getElementById("tab-btn-presentacio").textContent = d.nav.presentation;
