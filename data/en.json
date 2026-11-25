@@ -1,0 +1,206 @@
+{
+  "artist": {
+    "name": "Artist Name",
+    "subtitle": "Violin · Vocals · Chamber Ensembles"
+  },
+  "nav": {
+    "presentation": "Biography",
+    "services": "Services & Rates",
+    "gallery": "Gallery"
+  },
+  "presentation": {
+    "eyebrow": "Background & Artistic Profile",
+    "title": "Classical sensitivity and vocal versatility for unforgettable moments",
+    "photoUrl": "",
+    "photoAlt": "Artist portrait with violin",
+    "photoPlaceholder": "Portrait photograph placeholder",
+    "specialties": [
+      "Solo violin (classical, film scores & contemporary)",
+      "Classical & contemporary vocals",
+      "Coordination of duos, trios & string quartets",
+      "Bespoke repertoire upon request"
+    ],
+    "paragraphs": [
+      "This section will hold the full biography and career background provided by the artist. The editorial layout is designed to give generous breathing room and readability to long-form texts while maintaining a refined aesthetic.",
+      "You can split the biography into as many paragraphs as needed inside this array: academic training, stage and concert hall experience, notable collaborations, and artistic approach to private events.",
+      "Alongside solo violin and vocal performances, the artist works with a curated network of professional musicians to assemble bespoke ensembles (piano or guitar duo, string trio, or classical quartet) tailored to the acoustics and atmosphere of each celebration."
+    ]
+  },
+  "services": {
+    "eyebrow": "Formats & Pricing",
+    "title": "Services by event type",
+    "intro": "Select the type of event below to explore the available performance tiers, from solo sets to full chamber ensembles.",
+    "ctaLabel": "Check availability",
+    "inquiryPrefix": "Hello, I would like to inquire about:",
+    "footnote": "* Rates are indicative and tailored according to location, duration, and special repertoire requests.",
+    "events": [
+      {
+        "id": "bodas",
+        "name": "Weddings",
+        "description": "Live musical accompaniment for civil or religious ceremonies, welcome cocktails, and key reception moments.",
+        "packs": [
+          {
+            "tierLabel": "Essential Tier",
+            "name": "Soloist (Violin or Vocals)",
+            "price": "From €000",
+            "featured": false,
+            "summary": "Intimate and refined performance focused on the core moments of the ceremony.",
+            "features": [
+              "Up to 6 musical pieces of your choice",
+              "Personalized repertoire consultation",
+              "Self-powered sound system included",
+              "1 custom song request outside the catalog"
+            ]
+          },
+          {
+            "tierLabel": "Recommended Tier",
+            "name": "Violin & Vocals + Cocktail",
+            "price": "From €000",
+            "featured": true,
+            "summary": "A blend of instrumental violin and live vocals across both ceremony and cocktail reception.",
+            "features": [
+              "Full ceremony + 60-minute cocktail set",
+              "Alternating solo violin and vocal pieces",
+              "2 custom song requests arranged to order",
+              "Full sound setup for indoor or outdoor venues"
+            ]
+          },
+          {
+            "tierLabel": "Grand Format Tier",
+            "name": "Bespoke Ensemble",
+            "price": "From €000",
+            "featured": false,
+            "summary": "Expanded lineup (piano/guitar duo, string trio, or quartet) for a richer acoustic presence.",
+            "features": [
+              "Full coordination of all musicians",
+              "Custom arrangements for the ensemble",
+              "Coverage for ceremony, cocktail, and reception entrance",
+              "On-site soundcheck prior to the event"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ceremonias",
+        "name": "Ceremonies & Funerals",
+        "description": "Solemn, respectful, and deeply expressive live music for memorials, tributes, and commemorative services.",
+        "packs": [
+          {
+            "tierLabel": "Essential Tier",
+            "name": "Solo Violin",
+            "price": "From €000",
+            "featured": false,
+            "summary": "Understated instrumental accompaniment for chapels, churches, or secular services.",
+            "features": [
+              "3 to 4 classical or meaningful pieces",
+              "Short-notice availability",
+              "Battery-powered setup for venues without power",
+              "Direct, empathetic musical guidance"
+            ]
+          },
+          {
+            "tierLabel": "Ceremonial Tier",
+            "name": "Violin & Vocals",
+            "price": "From €000",
+            "featured": true,
+            "summary": "Instrumental and vocal pieces (Ave Maria, sacred works, or commemorative songs).",
+            "features": [
+              "Up to 5 musical interventions during the service",
+              "Combination of live violin and vocals",
+              "Preparation of a dedicated tribute piece",
+              "Discreet high-fidelity sound equipment"
+            ]
+          },
+          {
+            "tierLabel": "Chamber Tier",
+            "name": "Classical Duo or Trio",
+            "price": "From €000",
+            "featured": false,
+            "summary": "Accompaniment with piano, cello, or classical guitar for formal memorial services.",
+            "features": [
+              "Arranged classical and contemporary repertoire",
+              "Complete musical coordination",
+              "Seamless alignment with service protocol",
+              "Travel and setup included"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "privados",
+        "name": "Private Events & Galas",
+        "description": "Exclusive live ambience for gala dinners, anniversaries, openings, and corporate receptions.",
+        "packs": [
+          {
+            "tierLabel": "Cocktail Tier",
+            "name": "Solo Ambient Set",
+            "price": "From €000",
+            "featured": false,
+            "summary": "Versatile repertoire (classical, smooth jazz, film scores, and melodic pop) in solo format.",
+            "features": [
+              "60 to 90-minute live performance",
+              "Repertoire adapted to the pace of the event",
+              "Compact sound system included",
+              "Quick, discreet setup"
+            ]
+          },
+          {
+            "tierLabel": "Stage Tier",
+            "name": "Violin & Vocals Showcase",
+            "price": "From €000",
+            "featured": true,
+            "summary": "Dynamic live set combining instrumental blocks and featured vocal performances.",
+            "features": [
+              "Two 45-minute sets",
+              "International repertoire & modern classics",
+              "Polished stage presentation",
+              "Professional sound reinforcement included"
+            ]
+          },
+          {
+            "tierLabel": "Exclusive Tier",
+            "name": "Custom Ensemble",
+            "price": "From €000",
+            "featured": false,
+            "summary": "Tailored instrumental and vocal ensemble for galas, award ceremonies, or flagship events.",
+            "features": [
+              "Lineup designed around venue acoustics",
+              "Musical cue sheet synced with event schedule",
+              "End-to-end artist management",
+              "Pre-event rehearsals included"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Audiovisual Showcase",
+    "title": "Live Performances",
+    "intro": "A curated selection of solo violin, vocal, and ensemble performances recorded live and in studio.",
+    "videos": [
+      {
+        "youtubeId": "jfKfPfyJRdk",
+        "tag": "Solo Violin · Ceremony",
+        "title": "Performance Title 1 (Replace YouTube ID)",
+        "description": "Live acoustic ceremony performance. Add the piece title, composer, and recording context here."
+      },
+      {
+        "youtubeId": "5qap5aO4i9A",
+        "tag": "Vocals & Accompaniment",
+        "title": "Performance Title 2 (Replace YouTube ID)",
+        "description": "Live vocal showcase. You can add new videos anytime by duplicating this block in the JSON file."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact & Booking",
+    "subtitle": "Reach out directly to check date availability, discuss repertoire, or request a tailored quote.",
+    "whatsappNumber": "34600000000",
+    "whatsappLabel": "WhatsApp",
+    "instagramUrl": "https://instagram.com/",
+    "instagramLabel": "Instagram",
+    "email": "contact@artistdomain.com",
+    "rights": "All rights reserved."
+  }
+}

@@ -1,205 +1,206 @@
 {
-  "meta": {
-    "artistName": "Nom de l'Artista",
-    "tagline": "Violí & Cant Solista",
-    "location": "Catalunya · Disponibilitat per a desplaçaments"
+  "artist": {
+    "name": "Nom Artístic",
+    "subtitle": "Violí · Veu · Agrupacions de Cambra"
   },
   "nav": {
-    "presentacio": "Presentació",
-    "serveis": "Serveis i Tarifes",
-    "galeria": "Galeria"
+    "presentation": "Presentació",
+    "services": "Serveis i Tarifes",
+    "gallery": "Galeria"
   },
-  "presentacio": {
-    "headline": "Música en directe amb sensibilitat per als moments que perduren",
+  "presentation": {
+    "eyebrow": "Trajectòria i Perfil Artístic",
+    "title": "Sensibilitat clàssica i versatilitat vocal per a moments irrepetibles",
+    "photoUrl": "",
+    "photoAlt": "Retrat de l'artista amb violí",
+    "photoPlaceholder": "Espai per a fotografia de retrat",
+    "specialties": [
+      "Violí solista (clàssic, bandes sonores i modern)",
+      "Cant líric i modern",
+      "Coordinació de duos, trios i quartets",
+      "Repertori personalitzat a petició"
+    ],
     "paragraphs": [
-      "Músic solista especialitzat en violí i cant, amb una proposta pensada per dotar de calidesa, elegància i emoció cada celebració o cerimònia.",
-      "Cada actuació es prepara de manera totalment personalitzada, adaptant tant el timbre instrumental com el vocal a l'acústica de l'espai i al caràcter de cada moment."
-    ],
-    "pillars": [
-      {
-        "title": "Dues disciplines en un sol format",
-        "text": "Possibilitat de triar únicament violí, únicament cant o combinar ambdós registres al llarg d'un mateix acte."
-      },
-      {
-        "title": "Repertori a mida",
-        "text": "Des de peces clàssiques i sacres fins a bandes sonores o versions acústiques significatives per a cada família."
-      },
-      {
-        "title": "Autonomia tècnica",
-        "text": "Equip de sonorització propi, discret i adaptable tant a esglésies i sales interiors com a cerimònies a l'aire lliure."
-      }
-    ],
-    "cvSections": [
-      {
-        "heading": "Formació i Trajectòria",
-        "items": [
-          "Estudis superiors de música en l'especialitat de violí clàssic i tècnica vocal.",
-          "Experiència en cerimònies civils, religioses, actes institucionals i recitals de cambra.",
-          "Col·laboració habitual amb espais de celebració i organitzadors d'esdeveniments."
-        ]
-      },
-      {
-        "heading": "Estils i Repertori Habitual",
-        "items": [
-          "Clàssic i ceremonial: Bach, Pachelbel, Schubert, Handel, Vivaldi.",
-          "Sacre i comiat: Ave Maria, Cant dels Ocells, El Noi de la Mare, peces litúrgiques.",
-          "Modern i bandes sonores: arranjaments acústics per a violí i veu."
-        ]
-      }
-    ],
-    "cta": {
-      "text": "Vols comentar el repertori o consultar una data?",
-      "buttonLabel": "Contacta ara"
-    }
+      "Aquí anirà el text complet de presentació i trajectòria que t'ha facilitat l'artista. El disseny editorial està pensat per donar aire i llegibilitat a textos extensos sense perdre elegància.",
+      "Pots dividir la biografia en tants paràgrafs com necessitis dins d'aquesta llista: formació acadèmica, experiència en escenaris i auditoris, col·laboracions destacades i enfocament artístic en esdeveniments privats.",
+      "A més de la seva faceta com a violinista i cantant solista, compta amb una xarxa de músics professionals per configurar agrupacions a mida (duo amb piano o guitarra, trio de corda o quartet clàssic) adaptant-se a l'acústica i el caràcter de cada celebració."
+    ]
   },
-  "serveis": {
-    "title": "Serveis i Tarifes",
-    "subtitle": "Selecciona la modalitat d'actuació per veure les tarifes orientatives segons el tipus d'esdeveniment.",
-    "modifierLabel": "Modalitat del servei",
-    "modifiers": [
-      {
-        "id": "violi",
-        "label": "Violí solista",
-        "note": "Interpretació purament instrumental al violí, acústica o amplificada."
-      },
-      {
-        "id": "cant",
-        "label": "Cant solista",
-        "note": "Interpretació vocal amb acompanyament instrumental d'alta qualitat o a cappella."
-      },
-      {
-        "id": "combinat",
-        "label": "Violí i Cant",
-        "note": "Combinació alterna de peces instrumentals al violí i peces cantades durant l'acte."
-      }
-    ],
+  "services": {
+    "eyebrow": "Formats i Pressupostos",
+    "title": "Serveis per tipus d'esdeveniment",
+    "intro": "Selecciona el tipus de celebració per consultar les diferents gammes de format disponibles, des d'actuació solista fins a agrupació completa.",
+    "ctaLabel": "Consultar disponibilitat",
+    "inquiryPrefix": "Hola, m'agradaria demanar informació per a:",
+    "footnote": "* Les tarifes són orientatives i s'ajusten segons la ubicació, durada i peticions especials de repertori.",
     "events": [
       {
-        "id": "casaments",
-        "badge": "Celebracions",
-        "title": "Casaments",
-        "description": "Acompanyament musical per a cerimònies civils o religioses (entrada, anells, lectures, sortida) i amenització de l'aperitiu.",
-        "includes": [
-          "Assessorament personalitzat de tot el repertori",
-          "Preparació de fins a 2 peces fora de catàleg",
-          "Equip de so propi inclòs"
-        ],
-        "pricing": {
-          "violi": {
-            "price": "Des de 280 €",
-            "detail": "Cerimònia completa (fins a 6 peces al violí)"
+        "id": "bodas",
+        "name": "Casaments",
+        "description": "Acompanyament musical per a cerimònia civil o religiosa, còctel de benvinguda i moments clau del banquet.",
+        "packs": [
+          {
+            "tierLabel": "Gama Essencial",
+            "name": "Solista (Violí o Veu)",
+            "price": "Des de 000 €",
+            "featured": false,
+            "summary": "Interpretació íntima i elegant centrada en els moments principals de la cerimònia.",
+            "features": [
+              "Fins a 6 peces musicals a escollir",
+              "Assessorament personalitzat del repertori",
+              "Equip de so autònom inclòs",
+              "1 petició especial fora de catàleg"
+            ]
           },
-          "cant": {
-            "price": "Des de 280 €",
-            "detail": "Cerimònia completa (fins a 6 peces cantades)"
+          {
+            "tierLabel": "Gama Recomanada",
+            "name": "Violí & Veu + Còctel",
+            "price": "Des de 000 €",
+            "featured": true,
+            "summary": "Combinació de violí instrumental i cançons cantades per a cerimònia i aperitiu.",
+            "features": [
+              "Cerimònia completa + 60 minuts de còctel",
+              "Alternança de violí solista i interpretació vocal",
+              "2 peticions especials preparades a mida",
+              "Sonorització completa per a espais interiors o exteriors"
+            ]
           },
-          "combinat": {
-            "price": "Des de 360 €",
-            "detail": "Alternança de violí i veu en els moments clau"
+          {
+            "tierLabel": "Gama Gran Format",
+            "name": "Agrupació a Mida",
+            "price": "Des de 000 €",
+            "featured": false,
+            "summary": "Formació ampliada (duo amb piano/guitarra, trio o quartet de corda) per a un impacte sonor superior.",
+            "features": [
+              "Coordinació integral dels músics",
+              "Arranjaments personalitzats per a l'agrupació",
+              "Cobertura de cerimònia, còctel i entrada al banquet",
+              "Prova de so prèvia amb el lloc de l'esdeveniment"
+            ]
           }
-        }
+        ]
       },
       {
-        "id": "comiats",
-        "badge": "Solemnitat",
-        "title": "Cerimònies de Comiat i Funerals",
-        "description": "Música respectuosa, íntima i acurada per a vetlles, cerimònies religioses o actes laics de record.",
-        "includes": [
-          "Coordinació directa amb la família o la funerària",
-          "Repertori clàssic, tradicional o peces estimades",
-          "Disponibilitat amb poca antelació"
-        ],
-        "pricing": {
-          "violi": {
-            "price": "Des de 200 €",
-            "detail": "3 a 4 peces instrumentals durant la cerimònia"
+        "id": "ceremonias",
+        "name": "Cerimònies i Funerals",
+        "description": "Música solemne, respectuosa i carregada de sensibilitat per a comiats, homenatges i actes commemoratius.",
+        "packs": [
+          {
+            "tierLabel": "Gama Essencial",
+            "name": "Violí Solista",
+            "price": "Des de 000 €",
+            "featured": false,
+            "summary": "Acompanyament instrumental sobri per a tanatoris, esglésies o cerimònies laiques.",
+            "features": [
+              "3 a 4 peces clàssiques o significatives",
+              "Disponibilitat amb poca antelació",
+              "Adaptació a espais sense presa de corrent",
+              "Tracte directe i assessorament musical"
+            ]
           },
-          "cant": {
-            "price": "Des de 200 €",
-            "detail": "3 a 4 peces vocals durant la cerimònia"
+          {
+            "tierLabel": "Gama Ceremonial",
+            "name": "Violí i Cant",
+            "price": "Des de 000 €",
+            "featured": true,
+            "summary": "Intervencions instrumentals i vocals (Ave Maria, peces sacres o cançons commemoratives).",
+            "features": [
+              "Fins a 5 intervencions durant la cerimònia",
+              "Combinació de violí i veu en directe",
+              "Preparació d'una peça especial de record",
+              "Equip discret d'alta fidelitat"
+            ]
           },
-          "combinat": {
-            "price": "Des de 260 €",
-            "detail": "Combinació de violí i cant segons el guió de l'acte"
+          {
+            "tierLabel": "Gama Cambra",
+            "name": "Duo o Trio Clàssic",
+            "price": "Des de 000 €",
+            "featured": false,
+            "summary": "Acompanyament amb piano, violoncel o guitarra clàssica per a actes d'homenatge.",
+            "features": [
+              "Repertori clàssic i contemporani arranjat",
+              "Coordinació musical completa",
+              "Adaptació al protocol de la cerimònia",
+              "Desplaçament i muntatge inclosos"
+            ]
           }
-        }
+        ]
       },
       {
-        "id": "privats",
-        "badge": "A mida",
-        "title": "Esdeveniments Privats i Culturals",
-        "description": "Música ambiental o recital breu per a aniversaris, sopars de gala, inauguracions o actes institucionals.",
-        "includes": [
-          "Durada adaptable (de 45 minuts a 2 hores)",
-          "Repertori clàssic, bandes sonores o contemporani",
-          "Muntatge discret i autònom"
-        ],
-        "pricing": {
-          "violi": {
-            "price": "Des de 240 €",
-            "detail": "Sessió d'1 hora de música ambiental al violí"
+        "id": "privados",
+        "name": "Esdeveniments Privats i Gales",
+        "description": "Ambientació musical exclusiva per a sopars de gala, aniversaris, inauguracions i recepcions corporatives.",
+        "packs": [
+          {
+            "tierLabel": "Gama Còctel",
+            "name": "Sessió Ambiental Solista",
+            "price": "Des de 000 €",
+            "featured": false,
+            "summary": "Repertori variat (clàssic, jazz suau, bandes sonores i pop melòdic) en format solista.",
+            "features": [
+              "Actuació de 60 a 90 minuts",
+              "Repertori adaptable al ritme de l'esdeveniment",
+              "Equip de so compacte inclòs",
+              "Muntatge ràpid i discret"
+            ]
           },
-          "cant": {
-            "price": "Des de 240 €",
-            "detail": "Recital vocal d'1 hora amb acompanyament"
+          {
+            "tierLabel": "Gama Escènica",
+            "name": "Show Violí & Veu",
+            "price": "Des de 000 €",
+            "featured": true,
+            "summary": "Proposta dinàmica combinant blocs instrumentals i temes cantats en directe.",
+            "features": [
+              "2 passis de 45 minuts",
+              "Repertori internacional i clàssics moderns",
+              "Posada en escena cuidada",
+              "Sonorització professional inclosa"
+            ]
           },
-          "combinat": {
-            "price": "Des de 320 €",
-            "detail": "Sessió d'1 hora alternant violí i cant"
+          {
+            "tierLabel": "Gama Exclusiva",
+            "name": "Ensemble / Agrupació",
+            "price": "Des de 000 €",
+            "featured": false,
+            "summary": "Formació instrumental i vocal a mida per a gales, lliuraments de premis o grans esdeveniments.",
+            "features": [
+              "Disseny de la formació segons l'espai",
+              "Guió musical sincronitzat amb l'esdeveniment",
+              "Gestió integral dels intèrprets",
+              "Assajos previs inclosos"
+            ]
           }
-        }
-      }
-    ],
-    "disclaimer": "* Tarifes orientatives. El pressupost final s'ajusta segons el desplaçament, la durada de l'acte o l'ampliació a còctel/banquet."
-  },
-  "galeria": {
-    "title": "Galeria d'Actuacions",
-    "subtitle": "Mostra en vídeo de diferents interpretacions al violí i al cant.",
-    "allLabel": "Totes",
-    "videos": [
-      {
-        "title": "Canon en Re Major — Pachelbel (Violí solista)",
-        "category": "Violí",
-        "description": "Interpretació instrumental per a entrada de cerimònia.",
-        "youtubeId": "JvNQLJ1_HQ0"
-      },
-      {
-        "title": "Ave Maria — Schubert (Cant)",
-        "category": "Cant",
-        "description": "Versió vocal acústica per a cerimònies i moments solemnes.",
-        "youtubeId": "2bosouX_d8Y"
-      },
-      {
-        "title": "El Cant dels Ocells — Tradicional Catalana",
-        "category": "Violí",
-        "description": "Arranjament íntim per a violí solista en acte de comiat.",
-        "youtubeId": "qpbX7SbX10E"
+        ]
       }
     ]
   },
-  "footer": {
-    "title": "Contacte i Contractació",
-    "subtitle": "Escriu-me indicant la data, la població i el tipus d'esdeveniment per consultar disponibilitat.",
-    "links": [
+  "gallery": {
+    "eyebrow": "Mostra Audiovisual",
+    "title": "Actuacions i directe",
+    "intro": "Una selecció d'interpretacions a violí, veu i en format d'agrupació enregistrades en directe i estudi.",
+    "videos": [
       {
-        "type": "whatsapp",
-        "label": "WhatsApp",
-        "display": "+34 600 000 000",
-        "url": "https://wa.me/34600000000?text=Hola%2C%20m%27agradaria%20consultar%20disponibilitat%20per%20a%20una%20actuaci%C3%B3."
+        "youtubeId": "jfKfPfyJRdk",
+        "tag": "Violí Solista · Cerimònia",
+        "title": "Títol de l'actuació 1 (Substituir ID de YouTube)",
+        "description": "Interpretació en directe en cerimònia acústica. Aquí podràs indicar l'obra, l'autor i el context de l'enregistrament."
       },
       {
-        "type": "instagram",
-        "label": "Instagram",
-        "display": "@nomdelartista",
-        "url": "https://instagram.com/nomdelartista"
-      },
-      {
-        "type": "email",
-        "label": "Correu electrònic",
-        "display": "contacte@nomdelartista.cat",
-        "url": "mailto:contacte@nomdelartista.cat?subject=Consulta%20actuaci%C3%B3"
+        "youtubeId": "5qap5aO4i9A",
+        "tag": "Cant & Acompanyament",
+        "title": "Títol de l'actuació 2 (Substituir ID de YouTube)",
+        "description": "Mostra vocal enregistrada en directe. Pots anar afegint nous vídeos simplement duplicant aquest bloc al fitxer JSON."
       }
-    ],
-    "copyright": "© 2026 Nom de l'Artista · Tots els drets reservats"
+    ]
+  },
+  "contact": {
+    "title": "Contacte i contractació",
+    "subtitle": "Escriu-me directament per consultar disponibilitat de dates, repertori o demanar un pressupost sense compromís.",
+    "whatsappNumber": "34600000000",
+    "whatsappLabel": "WhatsApp",
+    "instagramUrl": "https://instagram.com/",
+    "instagramLabel": "Instagram",
+    "email": "contacte@dominiartista.com",
+    "rights": "Tots els drets reservats."
   }
 }

@@ -1,284 +1,268 @@
-const VALID_TABS = ["presentacio", "serveis", "galeria"];
-const VALID_LANGS = ["ca", "es"];
+(() => {
+  const SUPPORTED_LANGS = ["ca", "es", "en"];
+  const VALID_TABS = ["presentacio", "serveis", "galeria"];
 
-let siteData = null;
-let currentLang = "ca";
-let activeModifier = "violi";
-let activeVideoCategory = "all";
+  const state = {
+    lang: localStorage.getItem("portfolio_lang") || "ca",
+    tab: "presentacio",
+    selectedEventId: null,
+    data: null,
+  };
 
-const ICONS = {
-  whatsapp: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>`,
-  instagram: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>`,
-  email: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>`
-};
-
-async function loadLanguage(lang) {
-  const targetLang = VALID_LANGS.includes(lang) ? lang : "ca";
-  const banner = document.getElementById("load-error");
-
-  try {
-    const response = await fetch(`data/${targetLang}.json`);
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    siteData = await response.json();
-
-    currentLang = targetLang;
-    activeVideoCategory = "all";
-    document.documentElement.lang = targetLang;
-    localStorage.setItem("portfolio_lang", targetLang);
-    banner.hidden = true;
-
-    updateLangButtons();
-    renderHeader();
-    renderPresentacio();
-    renderServeis();
-    renderGaleria();
-    renderFooter();
-  } catch (err) {
-    banner.hidden = false;
-    banner.textContent =
-      "No s'han pogut carregar les dades / No se han podido cargar los datos. Obre el projecte amb un servidor local (Live Server o python3 -m http.server).";
-    console.error(err);
+  if (!SUPPORTED_LANGS.includes(state.lang)) {
+    state.lang = "ca";
   }
-}
 
-function updateLangButtons() {
-  document.querySelectorAll(".lang-btn").forEach((btn) => {
-    const isActive = btn.dataset.lang === currentLang;
-    btn.classList.toggle("active", isActive);
-    btn.setAttribute("aria-pressed", String(isActive));
-  });
-}
+  // Sincronización inicial con el hash de la URL (#presentacio, #serveis, #galeria)
+  function getTabFromHash() {
+    const hash = window.location.hash.replace("#", "").trim();
+    return VALID_TABS.includes(hash) ? hash : "presentacio";
+  }
 
-function setupLangSwitcher() {
-  document.querySelectorAll(".lang-btn").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const selected = btn.dataset.lang;
-      if (selected !== currentLang) {
-        loadLanguage(selected);
+  function setActiveTab(tabId, updateHash = true) {
+    if (!VALID_TABS.includes(tabId)) return;
+    state.tab = tabId;
+
+    document.querySelectorAll(".nav-tab").forEach((btn) => {
+      btn.classList.toggle("active", btn.dataset.tab === tabId);
+    });
+
+    document.querySelectorAll(".tab-panel").forEach((panel) => {
+      panel.classList.toggle("active", panel.id === `panel-${tabId}`);
+    });
+
+    if (updateHash && window.location.hash !== `#${tabId}`) {
+      history.replaceState(null, "", `#${tabId}`);
+    }
+  }
+
+  async function loadLanguageData(lang) {
+    const banner = document.getElementById("status-banner");
+    try {
+      const response = await fetch(`data/${lang}.json`, { cache: "no-cache" });
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}`);
       }
+      state.data = await response.json();
+      state.lang = lang;
+      localStorage.setItem("portfolio_lang", lang);
+      document.documentElement.lang = lang;
+      banner.classList.add("hidden");
+      renderAll();
+    } catch (error) {
+      console.error("Error carregant dades:", error);
+      banner.textContent =
+        "No s'han pogut carregar les dades. Si estàs en local, obre el projecte amb un servidor local (Live Server o python3 -m http.server).";
+      banner.classList.remove("hidden");
+    }
+  }
+
+  function renderAll() {
+    const d = state.data;
+    if (!d) return;
+
+    // Título de página y cabecera
+    document.title = `${d.artist.name} | ${d.artist.subtitle}`;
+    document.getElementById("brand-name").textContent = d.artist.name;
+    document.getElementById("brand-subtitle").textContent = d.artist.subtitle;
+
+    // Pestañas y selector de idioma
+    document.getElementById("tab-btn-presentacio").textContent = d.nav.presentation;
+    document.getElementById("tab-btn-serveis").textContent = d.nav.services;
+    document.getElementById("tab-btn-galeria").textContent = d.nav.gallery;
+
+    document.querySelectorAll(".lang-btn").forEach((btn) => {
+      btn.classList.toggle("active", btn.dataset.lang === state.lang);
     });
-  });
-}
 
-function renderHeader() {
-  const { meta, nav } = siteData;
-  document.title = `${meta.artistName} — ${meta.tagline}`;
-  document.getElementById("artist-tagline").textContent = meta.tagline;
-  document.getElementById("artist-name").textContent = meta.artistName;
-  document.getElementById("artist-location").textContent = meta.location;
+    renderPresentation(d.presentation);
+    renderServices(d.services, d.contact);
+    renderGallery(d.gallery);
+    renderFooter(d.artist, d.contact);
+  }
 
-  document.getElementById("tab-presentacio").textContent = nav.presentacio;
-  document.getElementById("tab-serveis").textContent = nav.serveis;
-  document.getElementById("tab-galeria").textContent = nav.galeria;
-}
+  function renderPresentation(pres) {
+    document.getElementById("bio-eyebrow").textContent = pres.eyebrow;
+    document.getElementById("bio-title").textContent = pres.title;
 
-function renderPresentacio() {
-  const { presentacio } = siteData;
-  document.getElementById("pres-headline").textContent = presentacio.headline;
+    const imgEl = document.getElementById("bio-image");
+    const fallbackEl = document.getElementById("bio-image-fallback");
+    fallbackEl.querySelector("span").textContent = pres.photoPlaceholder;
 
-  const paragraphsEl = document.getElementById("pres-paragraphs");
-  paragraphsEl.innerHTML = presentacio.paragraphs
-    .map((text) => `<p>${text}</p>`)
-    .join("");
+    if (pres.photoUrl) {
+      imgEl.src = pres.photoUrl;
+      imgEl.alt = pres.photoAlt || pres.title;
+      imgEl.onload = () => {
+        imgEl.classList.add("loaded");
+        fallbackEl.style.display = "none";
+      };
+      imgEl.onerror = () => {
+        imgEl.classList.remove("loaded");
+        fallbackEl.style.display = "flex";
+      };
+    } else {
+      imgEl.classList.remove("loaded");
+      fallbackEl.style.display = "flex";
+    }
 
-  const pillarsEl = document.getElementById("pres-pillars");
-  pillarsEl.innerHTML = presentacio.pillars
-    .map(
-      (pillar) => `
-      <article class="pillar-card">
-        <h3>${pillar.title}</h3>
-        <p>${pillar.text}</p>
-      </article>`
-    )
-    .join("");
-
-  const cvEl = document.getElementById("pres-cv");
-  cvEl.innerHTML = presentacio.cvSections
-    .map(
-      (sec) => `
-      <article class="cv-card">
-        <h3>${sec.heading}</h3>
-        <ul>${sec.items.map((item) => `<li>${item}</li>`).join("")}</ul>
-      </article>`
-    )
-    .join("");
-
-  document.getElementById("pres-cta-text").textContent = presentacio.cta.text;
-  document.getElementById("pres-cta-btn").textContent = presentacio.cta.buttonLabel;
-}
-
-function renderServeis() {
-  const { serveis } = siteData;
-  document.getElementById("serv-title").textContent = serveis.title;
-  document.getElementById("serv-subtitle").textContent = serveis.subtitle;
-  document.getElementById("serv-modifier-label").textContent = serveis.modifierLabel;
-  document.getElementById("serv-disclaimer").textContent = serveis.disclaimer;
-
-  const pillsEl = document.getElementById("serv-modifiers");
-  pillsEl.innerHTML = serveis.modifiers
-    .map(
-      (mod) => `
-      <button
-        type="button"
-        class="modifier-btn ${mod.id === activeModifier ? "active" : ""}"
-        data-modifier="${mod.id}">
-        ${mod.label}
-      </button>`
-    )
-    .join("");
-
-  pillsEl.querySelectorAll(".modifier-btn").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      activeModifier = btn.dataset.modifier;
-      renderServeis();
+    const specList = document.getElementById("bio-specialties");
+    specList.innerHTML = "";
+    pres.specialties.forEach((item) => {
+      const li = document.createElement("li");
+      li.textContent = item;
+      specList.appendChild(li);
     });
-  });
 
-  const currentModObj = serveis.modifiers.find((m) => m.id === activeModifier);
-  document.getElementById("serv-modifier-note").textContent = currentModObj
-    ? currentModObj.note
-    : "";
-
-  const eventsEl = document.getElementById("serv-events");
-  eventsEl.innerHTML = serveis.events
-    .map((ev) => {
-      const rate = ev.pricing[activeModifier];
-      return `
-      <article class="event-card">
-        <div>
-          <span class="event-badge">${ev.badge}</span>
-          <h3>${ev.title}</h3>
-          <p class="event-desc">${ev.description}</p>
-          <ul class="event-includes">
-            ${ev.includes.map((inc) => `<li>${inc}</li>`).join("")}
-          </ul>
-        </div>
-        <div class="price-box">
-          <span class="price-amount">${rate.price}</span>
-          <span class="price-detail">${rate.detail}</span>
-        </div>
-      </article>`;
-    })
-    .join("");
-}
-
-function renderGaleria() {
-  const { galeria } = siteData;
-  document.getElementById("gal-title").textContent = galeria.title;
-  document.getElementById("gal-subtitle").textContent = galeria.subtitle;
-
-  const categories = ["all", ...new Set(galeria.videos.map((v) => v.category))];
-  const filtersEl = document.getElementById("gal-filters");
-
-  filtersEl.innerHTML = categories
-    .map((cat) => {
-      const label = cat === "all" ? galeria.allLabel : cat;
-      return `
-        <button
-          type="button"
-          class="modifier-btn ${cat === activeVideoCategory ? "active" : ""}"
-          data-cat="${cat}">
-          ${label}
-        </button>`;
-    })
-    .join("");
-
-  filtersEl.querySelectorAll(".modifier-btn").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      activeVideoCategory = btn.dataset.cat;
-      renderGaleria();
+    const paragraphsContainer = document.getElementById("bio-paragraphs");
+    paragraphsContainer.innerHTML = "";
+    pres.paragraphs.forEach((text) => {
+      const p = document.createElement("p");
+      p.textContent = text;
+      paragraphsContainer.appendChild(p);
     });
-  });
+  }
 
-  const filteredVideos =
-    activeVideoCategory === "all"
-      ? galeria.videos
-      : galeria.videos.filter((v) => v.category === activeVideoCategory);
+  function renderServices(services, contact) {
+    document.getElementById("services-eyebrow").textContent = services.eyebrow;
+    document.getElementById("services-title").textContent = services.title;
+    document.getElementById("services-intro").textContent = services.intro;
+    document.getElementById("services-footnote").textContent = services.footnote;
 
-  const videosEl = document.getElementById("gal-videos");
-  videosEl.innerHTML = filteredVideos
-    .map(
-      (vid) => `
-      <article class="video-card">
+    const events = services.events || [];
+    if (!events.length) return;
+
+    if (!state.selectedEventId || !events.some((e) => e.id === state.selectedEventId)) {
+      state.selectedEventId = events[0].id;
+    }
+
+    const selectorContainer = document.getElementById("event-selector");
+    selectorContainer.innerHTML = "";
+
+    events.forEach((ev) => {
+      const btn = document.createElement("button");
+      btn.className = "event-pill";
+      btn.role = "tab";
+      btn.textContent = ev.name;
+      const isSelected = ev.id === state.selectedEventId;
+      btn.classList.toggle("active", isSelected);
+      btn.setAttribute("aria-selected", String(isSelected));
+      btn.addEventListener("click", () => {
+        state.selectedEventId = ev.id;
+        renderServices(services, contact);
+      });
+      selectorContainer.appendChild(btn);
+    });
+
+    const activeEvent = events.find((e) => e.id === state.selectedEventId);
+    document.getElementById("event-context-title").textContent = activeEvent.name;
+    document.getElementById("event-context-desc").textContent = activeEvent.description;
+
+    const packsGrid = document.getElementById("packs-grid");
+    packsGrid.innerHTML = "";
+
+    activeEvent.packs.forEach((pack) => {
+      const card = document.createElement("article");
+      card.className = `pack-card${pack.featured ? " featured" : ""}`;
+
+      const featuresHtml = pack.features.map((feat) => `<li>${escapeHtml(feat)}</li>`).join("");
+      const messageText = encodeURIComponent(
+        `${services.inquiryPrefix} ${activeEvent.name} (${pack.name})`
+      );
+      const whatsappHref = `https://wa.me/${contact.whatsappNumber}?text=${messageText}`;
+
+      card.innerHTML = `
+        <span class="pack-tier-tag">${escapeHtml(pack.tierLabel)}</span>
+        <h3 class="pack-name">${escapeHtml(pack.name)}</h3>
+        <div class="pack-price">${escapeHtml(pack.price)}</div>
+        <p class="pack-summary">${escapeHtml(pack.summary)}</p>
+        <ul class="pack-features">${featuresHtml}</ul>
+        <a href="${whatsappHref}" target="_blank" rel="noopener noreferrer" class="pack-cta">
+          ${escapeHtml(services.ctaLabel)}
+        </a>
+      `;
+
+      packsGrid.appendChild(card);
+    });
+  }
+
+  function renderGallery(gallery) {
+    document.getElementById("gallery-eyebrow").textContent = gallery.eyebrow;
+    document.getElementById("gallery-title").textContent = gallery.title;
+    document.getElementById("gallery-intro").textContent = gallery.intro;
+
+    const grid = document.getElementById("gallery-grid");
+    grid.innerHTML = "";
+
+    gallery.videos.forEach((video) => {
+      const article = document.createElement("article");
+      article.className = "video-card";
+
+      article.innerHTML = `
         <div class="video-wrapper">
           <iframe
-            src="https://www.youtube-nocookie.com/embed/${vid.youtubeId}"
-            title="${vid.title}"
+            src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(video.youtubeId)}"
+            title="${escapeHtml(video.title)}"
             loading="lazy"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen>
           </iframe>
         </div>
-        <div class="video-info">
-          <span class="video-cat">${vid.category}</span>
-          <h3>${vid.title}</h3>
-          <p>${vid.description}</p>
+        <div class="video-meta">
+          <span class="video-tag">${escapeHtml(video.tag)}</span>
+          <h3 class="video-title">${escapeHtml(video.title)}</h3>
+          <p class="video-desc">${escapeHtml(video.description)}</p>
         </div>
-      </article>`
-    )
-    .join("");
-}
+      `;
 
-function renderFooter() {
-  const { footer } = siteData;
-  document.getElementById("footer-title").textContent = footer.title;
-  document.getElementById("footer-subtitle").textContent = footer.subtitle;
-  document.getElementById("footer-copy").textContent = footer.copyright;
-
-  const linksEl = document.getElementById("footer-links");
-  linksEl.innerHTML = footer.links
-    .map(
-      (link) => `
-      <a class="contact-card" href="${link.url}" target="_blank" rel="noopener noreferrer">
-        ${ICONS[link.type] || ""}
-        <span class="contact-meta">
-          <span class="contact-label">${link.label}</span>
-          <span class="contact-value">${link.display}</span>
-        </span>
-      </a>`
-    )
-    .join("");
-}
-
-function activateTab(tabName, updateHash = true) {
-  const target = VALID_TABS.includes(tabName) ? tabName : "presentacio";
-
-  document.querySelectorAll(".tab-btn").forEach((btn) => {
-    const isSelected = btn.dataset.tab === target;
-    btn.classList.toggle("active", isSelected);
-    btn.setAttribute("aria-selected", String(isSelected));
-  });
-
-  document.querySelectorAll(".tab-panel").forEach((panel) => {
-    const isMatch = panel.id === `panel-${target}`;
-    panel.classList.toggle("active", isMatch);
-    panel.hidden = !isMatch;
-  });
-
-  if (updateHash) {
-    history.replaceState(null, "", `#${target}`);
+      grid.appendChild(article);
+    });
   }
-}
 
-function setupTabs() {
-  document.querySelectorAll(".tab-btn").forEach((btn) => {
-    btn.addEventListener("click", () => activateTab(btn.dataset.tab, true));
+  function renderFooter(artist, contact) {
+    document.getElementById("footer-title").textContent = contact.title;
+    document.getElementById("footer-subtitle").textContent = contact.subtitle;
+
+    const waLink = document.getElementById("link-whatsapp");
+    waLink.href = `https://wa.me/${contact.whatsappNumber}`;
+    document.getElementById("label-whatsapp").textContent = contact.whatsappLabel;
+
+    const igLink = document.getElementById("link-instagram");
+    igLink.href = contact.instagramUrl;
+    document.getElementById("label-instagram").textContent = contact.instagramLabel;
+
+    const mailLink = document.getElementById("link-email");
+    mailLink.href = `mailto:${contact.email}`;
+    document.getElementById("label-email").textContent = contact.email;
+
+    const year = new Date().getFullYear();
+    document.getElementById("footer-copy").textContent = `© ${year} ${artist.name}. ${contact.rights}`;
+  }
+
+  function escapeHtml(str) {
+    const div = document.createElement("div");
+    div.textContent = str ?? "";
+    return div.innerHTML;
+  }
+
+  // Event listeners de navegación e idiomas
+  document.querySelectorAll(".nav-tab").forEach((btn) => {
+    btn.addEventListener("click", () => setActiveTab(btn.dataset.tab));
+  });
+
+  document.querySelectorAll(".lang-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const targetLang = btn.dataset.lang;
+      if (targetLang !== state.lang) {
+        loadLanguageData(targetLang);
+      }
+    });
   });
 
   window.addEventListener("hashchange", () => {
-    const hashTab = window.location.hash.replace("#", "");
-    if (VALID_TABS.includes(hashTab)) {
-      activateTab(hashTab, false);
-    }
+    setActiveTab(getTabFromHash(), false);
   });
 
-  const initialHash = window.location.hash.replace("#", "");
-  activateTab(initialHash, false);
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  const savedLang = localStorage.getItem("portfolio_lang") || "ca";
-  setupTabs();
-  setupLangSwitcher();
-  loadLanguage(savedLang);
-});
+  // Inicialización
+  setActiveTab(getTabFromHash(), false);
+  loadLanguageData(state.lang);
+})();

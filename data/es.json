@@ -1,205 +1,206 @@
 {
-  "meta": {
-    "artistName": "Nombre del Artista",
-    "tagline": "Violín & Canto Solista",
-    "location": "Cataluña · Disponibilidad para desplazamientos"
+  "artist": {
+    "name": "Nombre Artístico",
+    "subtitle": "Violín · Voz · Agrupaciones de Cámara"
   },
   "nav": {
-    "presentacio": "Presentación",
-    "serveis": "Servicios y Tarifas",
-    "galeria": "Galería"
+    "presentation": "Presentación",
+    "services": "Servicios y Tarifas",
+    "gallery": "Galería"
   },
-  "presentacio": {
-    "headline": "Música en directo con sensibilidad para los momentos que perduran",
+  "presentation": {
+    "eyebrow": "Trayectoria y Perfil Artístico",
+    "title": "Sensibilidad clásica y versatilidad vocal para momentos irrepetibles",
+    "photoUrl": "",
+    "photoAlt": "Retrato del artista con violín",
+    "photoPlaceholder": "Espacio para fotografía de retrato",
+    "specialties": [
+      "Violín solista (clásico, bandas sonoras y moderno)",
+      "Canto lírico y moderno",
+      "Coordinación de dúos, tríos y cuartetos",
+      "Repertorio personalizado bajo petición"
+    ],
     "paragraphs": [
-      "Músico solista especializado en violín y canto, con una propuesta pensada para dotar de calidez, elegancia y emoción cada celebración o ceremonia.",
-      "Cada actuación se prepara de manera totalmente personalizada, adaptando tanto el timbre instrumental como el vocal a la acústica del espacio y al carácter de cada momento."
-    ],
-    "pillars": [
-      {
-        "title": "Dos disciplinas en un solo formato",
-        "text": "Posibilidad de elegir únicamente violín, únicamente canto o combinar ambos registros a lo largo de un mismo acto."
-      },
-      {
-        "title": "Repertorio a medida",
-        "text": "Desde piezas clásicas y sacras hasta bandas sonoras o versiones acústicas significativas para cada familia."
-      },
-      {
-        "title": "Autonomía técnica",
-        "text": "Equipo de sonorización propio, discreto y adaptable tanto a iglesias y salas interiores como a ceremonias al aire libre."
-      }
-    ],
-    "cvSections": [
-      {
-        "heading": "Formación y Trayectoria",
-        "items": [
-          "Estudios superiores de música en la especialidad de violín clásico y técnica vocal.",
-          "Experiencia en ceremonias civiles, religiosas, actos institucionales y recitales de cámara.",
-          "Colaboración habitual con espacios de celebración y organizadores de eventos."
-        ]
-      },
-      {
-        "heading": "Estilos y Repertorio Habitual",
-        "items": [
-          "Clásico y ceremonial: Bach, Pachelbel, Schubert, Handel, Vivaldi.",
-          "Sacro y despedida: Ave María, El Cant dels Ocells, El Noi de la Mare, piezas litúrgicas.",
-          "Moderno y bandas sonoras: arreglos acústicos para violín y voz."
-        ]
-      }
-    ],
-    "cta": {
-      "text": "¿Quieres comentar el repertorio o consultar una fecha?",
-      "buttonLabel": "Contacta ahora"
-    }
+      "Aquí irá el texto completo de presentación y trayectoria que te ha facilitado el artista. El diseño editorial está pensado para dar aire y legibilidad a textos extensos sin perder elegancia.",
+      "Puedes dividir la biografía en tantos párrafos como necesites dentro de esta lista: formación académica, experiencia en escenarios y auditorios, colaboraciones destacadas y enfoque artístico en eventos privados.",
+      "Además de su faceta como violinista y cantante solista, cuenta con una red de músicos profesionales para configurar agrupaciones a medida (dúo con piano o guitarra, trío de cuerda o cuarteto clásico) adaptándose a la acústica y el carácter de cada celebración."
+    ]
   },
-  "serveis": {
-    "title": "Servicios y Tarifas",
-    "subtitle": "Selecciona la modalidad de actuación para ver las tarifas orientativas según el tipo de evento.",
-    "modifierLabel": "Modalidad del servicio",
-    "modifiers": [
-      {
-        "id": "violi",
-        "label": "Violín solista",
-        "note": "Interpretación puramente instrumental al violín, acústica o amplificada."
-      },
-      {
-        "id": "cant",
-        "label": "Canto solista",
-        "note": "Interpretación vocal con acompañamiento instrumental de alta calidad o a cappella."
-      },
-      {
-        "id": "combinat",
-        "label": "Violín y Canto",
-        "note": "Combinación alterna de piezas instrumentales al violín y piezas cantadas durante el acto."
-      }
-    ],
+  "services": {
+    "eyebrow": "Formatos y Presupuestos",
+    "title": "Servicios por tipo de evento",
+    "intro": "Selecciona el tipo de celebración para consultar las distintas gamas de formato disponibles, desde actuación solista hasta agrupación completa.",
+    "ctaLabel": "Consultar disponibilidad",
+    "inquiryPrefix": "Hola, me gustaría pedir información para:",
+    "footnote": "* Las tarifas son orientativas y se ajustan según la ubicación, duración y peticiones especiales de repertorio.",
     "events": [
       {
-        "id": "casaments",
-        "badge": "Celebraciones",
-        "title": "Bodas",
-        "description": "Acompañamiento musical para ceremonias civiles o religiosas (entrada, anillos, lecturas, salida) y amenización del aperitivo.",
-        "includes": [
-          "Asesoramiento personalizado de todo el repertorio",
-          "Preparación de hasta 2 piezas fuera de catálogo",
-          "Equipo de sonido propio incluido"
-        ],
-        "pricing": {
-          "violi": {
-            "price": "Desde 280 €",
-            "detail": "Ceremonia completa (hasta 6 piezas al violín)"
+        "id": "bodas",
+        "name": "Bodas",
+        "description": "Acompañamiento musical para ceremonia civil o religiosa, cóctel de bienvenida y momentos clave del banquete.",
+        "packs": [
+          {
+            "tierLabel": "Gama Esencial",
+            "name": "Solista (Violín o Voz)",
+            "price": "Desde 000 €",
+            "featured": false,
+            "summary": "Interpretación íntima y elegante centrada en los momentos principales de la ceremonia.",
+            "features": [
+              "Hasta 6 piezas musicales a elegir",
+              "Asesoramiento personalizado del repertorio",
+              "Equipo de sonido autónomo incluido",
+              "1 petición especial fuera de catálogo"
+            ]
           },
-          "cant": {
-            "price": "Desde 280 €",
-            "detail": "Ceremonia completa (hasta 6 piezas cantadas)"
+          {
+            "tierLabel": "Gama Recomendada",
+            "name": "Violín & Voz + Cóctel",
+            "price": "Desde 000 €",
+            "featured": true,
+            "summary": "Combinación de violín instrumental y canciones cantadas para ceremonia y aperitivo.",
+            "features": [
+              "Ceremonia completa + 60 minutos de cóctel",
+              "Alternancia de violín solista e interpretación vocal",
+              "2 peticiones especiales preparadas a medida",
+              "Sonorización completa para espacios interiores o exteriores"
+            ]
           },
-          "combinat": {
-            "price": "Desde 360 €",
-            "detail": "Alternancia de violín y voz en los momentos clave"
+          {
+            "tierLabel": "Gama Gran Formato",
+            "name": "Agrupación a Medida",
+            "price": "Desde 000 €",
+            "featured": false,
+            "summary": "Formación ampliada (dúo con piano/guitarra, trío o cuarteto de cuerda) para un impacto sonoro superior.",
+            "features": [
+              "Coordinación integral de los músicos",
+              "Arreglos personalizados para la agrupación",
+              "Cobertura de ceremonia, cóctel y entrada al banquete",
+              "Prueba de sonido previa con el espacio del evento"
+            ]
           }
-        }
+        ]
       },
       {
-        "id": "comiats",
-        "badge": "Solemnidad",
-        "title": "Ceremonias de Despedida y Funerales",
-        "description": "Música respetuosa, íntima y cuidada para velatorios, ceremonias religiosas o actos laicos de recuerdo.",
-        "includes": [
-          "Coordinación directa con la familia o la funeraria",
-          "Repertorio clásico, tradicional o piezas significativas",
-          "Disponibilidad con poca antelación"
-        ],
-        "pricing": {
-          "violi": {
-            "price": "Desde 200 €",
-            "detail": "3 a 4 piezas instrumentales durante la ceremonia"
+        "id": "ceremonias",
+        "name": "Ceremonias y Funerales",
+        "description": "Música solemne, respetuosa y cargada de sensibilidad para despedidas, homenajes y actos conmemorativos.",
+        "packs": [
+          {
+            "tierLabel": "Gama Esencial",
+            "name": "Violín Solista",
+            "price": "Desde 000 €",
+            "featured": false,
+            "summary": "Acompañamiento instrumental sobrio para tanatorios, iglesias o ceremonias laicas.",
+            "features": [
+              "3 a 4 piezas clásicas o significativas",
+              "Disponibilidad con poca antelación",
+              "Adaptación a espacios sin toma de corriente",
+              "Trato directo y asesoramiento musical"
+            ]
           },
-          "cant": {
-            "price": "Desde 200 €",
-            "detail": "3 a 4 piezas vocales durante la ceremonia"
+          {
+            "tierLabel": "Gama Ceremonial",
+            "name": "Violín y Canto",
+            "price": "Desde 000 €",
+            "featured": true,
+            "summary": "Intervenciones instrumentales y vocales (Ave María, piezas sacras o canciones conmemorativas).",
+            "features": [
+              "Hasta 5 intervenciones durante la ceremonia",
+              "Combinación de violín y voz en directo",
+              "Preparación de una pieza especial de recuerdo",
+              "Equipo discreto de alta fidelidad"
+            ]
           },
-          "combinat": {
-            "price": "Desde 260 €",
-            "detail": "Combinación de violín y canto según el guion del acto"
+          {
+            "tierLabel": "Gama Cámara",
+            "name": "Dúo o Trío Clásico",
+            "price": "Desde 000 €",
+            "featured": false,
+            "summary": "Acompañamiento con piano, violonchelo o guitarra clásica para actos de homenaje.",
+            "features": [
+              "Repertorio clásico y contemporáneo arreglado",
+              "Coordinación musical completa",
+              "Adaptación al protocolo de la ceremonia",
+              "Desplazamiento y montaje incluidos"
+            ]
           }
-        }
+        ]
       },
       {
-        "id": "privats",
-        "badge": "A medida",
-        "title": "Eventos Privados y Culturales",
-        "description": "Música ambiental o recital breve para aniversarios, cenas de gala, inauguraciones o actos institucionales.",
-        "includes": [
-          "Duración adaptable (de 45 minutos a 2 horas)",
-          "Repertorio clásico, bandas sonoras o contemporáneo",
-          "Montaje discreto y autónomo"
-        ],
-        "pricing": {
-          "violi": {
-            "price": "Desde 240 €",
-            "detail": "Sesión de 1 hora de música ambiental al violín"
+        "id": "privados",
+        "name": "Eventos Privados y Galas",
+        "description": "Ambientación musical exclusiva para cenas de gala, aniversarios, inauguraciones y recepciones corporativas.",
+        "packs": [
+          {
+            "tierLabel": "Gama Cóctel",
+            "name": "Sesión Ambiental Solista",
+            "price": "Desde 000 €",
+            "featured": false,
+            "summary": "Repertorio variado (clásico, jazz suave, bandas sonoras y pop melódico) en formato solista.",
+            "features": [
+              "Actuación de 60 a 90 minutos",
+              "Repertorio adaptable al ritmo del evento",
+              "Equipo de sonido compacto incluido",
+              "Montaje rápido y discreto"
+            ]
           },
-          "cant": {
-            "price": "Desde 240 €",
-            "detail": "Recital vocal de 1 hora con acompañamiento"
+          {
+            "tierLabel": "Gama Escénica",
+            "name": "Show Violín & Voz",
+            "price": "Desde 000 €",
+            "featured": true,
+            "summary": "Propuesta dinámica combinando bloques instrumentales y temas cantados en directo.",
+            "features": [
+              "2 pases de 45 minutos",
+              "Repertorio internacional y clásicos modernos",
+              "Puesta en escena cuidada",
+              "Sonorización profesional incluida"
+            ]
           },
-          "combinat": {
-            "price": "Desde 320 €",
-            "detail": "Sesión de 1 hora alternando violín y canto"
+          {
+            "tierLabel": "Gama Exclusiva",
+            "name": "Ensemble / Agrupación",
+            "price": "Desde 000 €",
+            "featured": false,
+            "summary": "Formación instrumental y vocal a medida para galas, entregas de premios o grandes eventos.",
+            "features": [
+              "Diseño de la formación según el espacio",
+              "Guion musical sincronizado con el evento",
+              "Gestión integral de los intérpretes",
+              "Ensayos previos incluidos"
+            ]
           }
-        }
-      }
-    ],
-    "disclaimer": "* Tarifas orientativas. El presupuesto final se ajusta según el desplazamiento, la duración del acto o la ampliación a cóctel/banquete."
-  },
-  "galeria": {
-    "title": "Galería de Actuaciones",
-    "subtitle": "Muestra en vídeo de diferentes interpretaciones al violín y al canto.",
-    "allLabel": "Todas",
-    "videos": [
-      {
-        "title": "Canon en Re Mayor — Pachelbel (Violín solista)",
-        "category": "Violín",
-        "description": "Interpretación instrumental para entrada de ceremonia.",
-        "youtubeId": "JvNQLJ1_HQ0"
-      },
-      {
-        "title": "Ave María — Schubert (Canto)",
-        "category": "Canto",
-        "description": "Versión vocal acústica para ceremonias y momentos solemnes.",
-        "youtubeId": "2bosouX_d8Y"
-      },
-      {
-        "title": "El Cant dels Ocells — Tradicional Catalana",
-        "category": "Violín",
-        "description": "Arreglo íntimo para violín solista en acto de despedida.",
-        "youtubeId": "qpbX7SbX10E"
+        ]
       }
     ]
   },
-  "footer": {
-    "title": "Contacto y Contratación",
-    "subtitle": "Escríbeme indicando la fecha, la población y el tipo de evento para consultar disponibilidad.",
-    "links": [
+  "gallery": {
+    "eyebrow": "Muestra Audiovisual",
+    "title": "Actuaciones y directo",
+    "intro": "Una selección de interpretaciones a violín, voz y en formato de agrupación grabadas en directo y estudio.",
+    "videos": [
       {
-        "type": "whatsapp",
-        "label": "WhatsApp",
-        "display": "+34 600 000 000",
-        "url": "https://wa.me/34600000000?text=Hola%2C%20me%20gustar%C3%ADa%20consultar%20disponibilidad%20para%20una%20actuaci%C3%B3n."
+        "youtubeId": "jfKfPfyJRdk",
+        "tag": "Violín Solista · Ceremonia",
+        "title": "Título de la actuación 1 (Sustituir ID de YouTube)",
+        "description": "Interpretación en directo en ceremonia acústica. Aquí podrás indicar la obra, el autor y el contexto de la grabación."
       },
       {
-        "type": "instagram",
-        "label": "Instagram",
-        "display": "@nomdelartista",
-        "url": "https://instagram.com/nomdelartista"
-      },
-      {
-        "type": "email",
-        "label": "Correo electrónico",
-        "display": "contacte@nomdelartista.cat",
-        "url": "mailto:contacte@nomdelartista.cat?subject=Consulta%20actuaci%C3%B3n"
+        "youtubeId": "5qap5aO4i9A",
+        "tag": "Canto & Acompañamiento",
+        "title": "Título de la actuación 2 (Sustituir ID de YouTube)",
+        "description": "Muestra vocal grabada en directo. Puedes ir añadiendo nuevos vídeos simplemente duplicando este bloque en el archivo JSON."
       }
-    ],
-    "copyright": "© 2026 Nombre del Artista · Todos los derechos reservados"
+    ]
+  },
+  "contact": {
+    "title": "Contacto y contratación",
+    "subtitle": "Escríbeme directamente para consultar disponibilidad de fechas, repertorio o pedir un presupuesto sin compromiso.",
+    "whatsappNumber": "34600000000",
+    "whatsappLabel": "WhatsApp",
+    "instagramUrl": "https://instagram.com/",
+    "instagramLabel": "Instagram",
+    "email": "contacto@dominioartista.com",
+    "rights": "Todos los derechos reservados."
   }
 }
