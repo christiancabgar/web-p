@@ -1,0 +1,205 @@
+{
+  "meta": {
+    "artistName": "Nombre del Artista",
+    "tagline": "Violín & Canto Solista",
+    "location": "Cataluña · Disponibilidad para desplazamientos"
+  },
+  "nav": {
+    "presentacio": "Presentación",
+    "serveis": "Servicios y Tarifas",
+    "galeria": "Galería"
+  },
+  "presentacio": {
+    "headline": "Música en directo con sensibilidad para los momentos que perduran",
+    "paragraphs": [
+      "Músico solista especializado en violín y canto, con una propuesta pensada para dotar de calidez, elegancia y emoción cada celebración o ceremonia.",
+      "Cada actuación se prepara de manera totalmente personalizada, adaptando tanto el timbre instrumental como el vocal a la acústica del espacio y al carácter de cada momento."
+    ],
+    "pillars": [
+      {
+        "title": "Dos disciplinas en un solo formato",
+        "text": "Posibilidad de elegir únicamente violín, únicamente canto o combinar ambos registros a lo largo de un mismo acto."
+      },
+      {
+        "title": "Repertorio a medida",
+        "text": "Desde piezas clásicas y sacras hasta bandas sonoras o versiones acústicas significativas para cada familia."
+      },
+      {
+        "title": "Autonomía técnica",
+        "text": "Equipo de sonorización propio, discreto y adaptable tanto a iglesias y salas interiores como a ceremonias al aire libre."
+      }
+    ],
+    "cvSections": [
+      {
+        "heading": "Formación y Trayectoria",
+        "items": [
+          "Estudios superiores de música en la especialidad de violín clásico y técnica vocal.",
+          "Experiencia en ceremonias civiles, religiosas, actos institucionales y recitales de cámara.",
+          "Colaboración habitual con espacios de celebración y organizadores de eventos."
+        ]
+      },
+      {
+        "heading": "Estilos y Repertorio Habitual",
+        "items": [
+          "Clásico y ceremonial: Bach, Pachelbel, Schubert, Handel, Vivaldi.",
+          "Sacro y despedida: Ave María, El Cant dels Ocells, El Noi de la Mare, piezas litúrgicas.",
+          "Moderno y bandas sonoras: arreglos acústicos para violín y voz."
+        ]
+      }
+    ],
+    "cta": {
+      "text": "¿Quieres comentar el repertorio o consultar una fecha?",
+      "buttonLabel": "Contacta ahora"
+    }
+  },
+  "serveis": {
+    "title": "Servicios y Tarifas",
+    "subtitle": "Selecciona la modalidad de actuación para ver las tarifas orientativas según el tipo de evento.",
+    "modifierLabel": "Modalidad del servicio",
+    "modifiers": [
+      {
+        "id": "violi",
+        "label": "Violín solista",
+        "note": "Interpretación puramente instrumental al violín, acústica o amplificada."
+      },
+      {
+        "id": "cant",
+        "label": "Canto solista",
+        "note": "Interpretación vocal con acompañamiento instrumental de alta calidad o a cappella."
+      },
+      {
+        "id": "combinat",
+        "label": "Violín y Canto",
+        "note": "Combinación alterna de piezas instrumentales al violín y piezas cantadas durante el acto."
+      }
+    ],
+    "events": [
+      {
+        "id": "casaments",
+        "badge": "Celebraciones",
+        "title": "Bodas",
+        "description": "Acompañamiento musical para ceremonias civiles o religiosas (entrada, anillos, lecturas, salida) y amenización del aperitivo.",
+        "includes": [
+          "Asesoramiento personalizado de todo el repertorio",
+          "Preparación de hasta 2 piezas fuera de catálogo",
+          "Equipo de sonido propio incluido"
+        ],
+        "pricing": {
+          "violi": {
+            "price": "Desde 280 €",
+            "detail": "Ceremonia completa (hasta 6 piezas al violín)"
+          },
+          "cant": {
+            "price": "Desde 280 €",
+            "detail": "Ceremonia completa (hasta 6 piezas cantadas)"
+          },
+          "combinat": {
+            "price": "Desde 360 €",
+            "detail": "Alternancia de violín y voz en los momentos clave"
+          }
+        }
+      },
+      {
+        "id": "comiats",
+        "badge": "Solemnidad",
+        "title": "Ceremonias de Despedida y Funerales",
+        "description": "Música respetuosa, íntima y cuidada para velatorios, ceremonias religiosas o actos laicos de recuerdo.",
+        "includes": [
+          "Coordinación directa con la familia o la funeraria",
+          "Repertorio clásico, tradicional o piezas significativas",
+          "Disponibilidad con poca antelación"
+        ],
+        "pricing": {
+          "violi": {
+            "price": "Desde 200 €",
+            "detail": "3 a 4 piezas instrumentales durante la ceremonia"
+          },
+          "cant": {
+            "price": "Desde 200 €",
+            "detail": "3 a 4 piezas vocales durante la ceremonia"
+          },
+          "combinat": {
+            "price": "Desde 260 €",
+            "detail": "Combinación de violín y canto según el guion del acto"
+          }
+        }
+      },
+      {
+        "id": "privats",
+        "badge": "A medida",
+        "title": "Eventos Privados y Culturales",
+        "description": "Música ambiental o recital breve para aniversarios, cenas de gala, inauguraciones o actos institucionales.",
+        "includes": [
+          "Duración adaptable (de 45 minutos a 2 horas)",
+          "Repertorio clásico, bandas sonoras o contemporáneo",
+          "Montaje discreto y autónomo"
+        ],
+        "pricing": {
+          "violi": {
+            "price": "Desde 240 €",
+            "detail": "Sesión de 1 hora de música ambiental al violín"
+          },
+          "cant": {
+            "price": "Desde 240 €",
+            "detail": "Recital vocal de 1 hora con acompañamiento"
+          },
+          "combinat": {
+            "price": "Desde 320 €",
+            "detail": "Sesión de 1 hora alternando violín y canto"
+          }
+        }
+      }
+    ],
+    "disclaimer": "* Tarifas orientativas. El presupuesto final se ajusta según el desplazamiento, la duración del acto o la ampliación a cóctel/banquete."
+  },
+  "galeria": {
+    "title": "Galería de Actuaciones",
+    "subtitle": "Muestra en vídeo de diferentes interpretaciones al violín y al canto.",
+    "allLabel": "Todas",
+    "videos": [
+      {
+        "title": "Canon en Re Mayor — Pachelbel (Violín solista)",
+        "category": "Violín",
+        "description": "Interpretación instrumental para entrada de ceremonia.",
+        "youtubeId": "JvNQLJ1_HQ0"
+      },
+      {
+        "title": "Ave María — Schubert (Canto)",
+        "category": "Canto",
+        "description": "Versión vocal acústica para ceremonias y momentos solemnes.",
+        "youtubeId": "2bosouX_d8Y"
+      },
+      {
+        "title": "El Cant dels Ocells — Tradicional Catalana",
+        "category": "Violín",
+        "description": "Arreglo íntimo para violín solista en acto de despedida.",
+        "youtubeId": "qpbX7SbX10E"
+      }
+    ]
+  },
+  "footer": {
+    "title": "Contacto y Contratación",
+    "subtitle": "Escríbeme indicando la fecha, la población y el tipo de evento para consultar disponibilidad.",
+    "links": [
+      {
+        "type": "whatsapp",
+        "label": "WhatsApp",
+        "display": "+34 600 000 000",
+        "url": "https://wa.me/34600000000?text=Hola%2C%20me%20gustar%C3%ADa%20consultar%20disponibilidad%20para%20una%20actuaci%C3%B3n."
+      },
+      {
+        "type": "instagram",
+        "label": "Instagram",
+        "display": "@nomdelartista",
+        "url": "https://instagram.com/nomdelartista"
+      },
+      {
+        "type": "email",
+        "label": "Correo electrónico",
+        "display": "contacte@nomdelartista.cat",
+        "url": "mailto:contacte@nomdelartista.cat?subject=Consulta%20actuaci%C3%B3n"
+      }
+    ],
+    "copyright": "© 2026 Nombre del Artista · Todos los derechos reservados"
+  }
+}
