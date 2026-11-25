@@ -1,6 +1,6 @@
 {
   "artist": {
-    "name": "Paula Balbín",
+    "name": "Paula G. Balbín",
     "subtitle": "Violí · Cant · Agrupacions"
   },
   "nav": {
@@ -205,6 +205,7 @@
     "instagramUrl": "https://instagram.com/paulabalbin_16",
     "instagramLabel": "Instagram",
     "email": "pbalbin16@gmail.com",
+    "emailLabel": "Correu electrònic",
     "rights": "Tots els drets reservats."
   }
 }
